@@ -29,7 +29,7 @@ In the above HTML we have the following inside the body section:
 * a `div` with the CSS class of `"red"`
 
 
-The first thing I want to do is make it so all elements with the class of "red" has a background of red. In our `styles.css`:
+First let's make all elements with a class of "red" have a background of red:
 
 ```css
 .red {
@@ -37,7 +37,7 @@ The first thing I want to do is make it so all elements with the class of "red" 
 }
 ```
 
-Awesome, but I think I want just the `<p>` elements with that class name to have a background of red. So in `styles.css`:
+Awesome, but I think I want just the `<p>` elements with that class name to have a background of red:
 
 ```css
 p.red {
@@ -45,9 +45,12 @@ p.red {
 }
 ```
 
-Finally to select an element with an id you use `#`. I'm going to change the background color of the p element with class "green" in our `styles.css`:
+Finally to select an element with an id we use the _id_ selector (`#`). Let's set the background color of the p element that has a class of "green":
 
 ```css
+p.red {
+  background: red;
+}
 #green {
   background: green;
 }
