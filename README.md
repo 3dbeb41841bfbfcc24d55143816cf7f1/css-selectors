@@ -71,7 +71,6 @@ If I change the css selector from `p.red` back to `.red` you'll notice that the 
 .red {
   background: blue;
 }
-
 .red {
   background: red;
 }
