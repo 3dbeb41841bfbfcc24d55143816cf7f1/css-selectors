@@ -58,6 +58,8 @@ p.red {
 
 The above example can be found at this [codepen](http://codepen.io/drmikeh/pen/mEXQZr?editors=1100#0).
 
+---
+
 ## CSS Specificity
 
 If I change the css selector from `p.red` back to `.red` you'll notice that the paragraph element with the id of green is still green. This is because of CSS Specificity. While CSS cascades from top to bottom. The CSS that is applied depends on Specificity as well. Take the following example:
@@ -76,6 +78,8 @@ If I change the css selector from `p.red` back to `.red` you'll notice that the 
 ```
 
 In this example the elements that have the class red, will ultimately have a background of red even though blue was set first because it takes the last declared property. However, even though the `#green` selector was written first, it has a higher specificity and therefore overides the following background properties.
+
+---
 
 ## Common Selectors
 
@@ -104,6 +108,8 @@ Multiple selectors can be combined in different ways. For example, given the fol
 </article>
 ```
 
+If we apply the following CSS:
+
 ```css
 p.news {
   color: blue;
@@ -120,13 +126,22 @@ button + button {
 }
 ```
 
+We have selected the following:
+
+* the 1st paragraph is selected using both the `type` selector and the `class` selector
+* the 2nd paragraph is selected using the `descendant` selector
+* the 2nd button is selected using the `adjacent` selector
+
+
 The above example can be found at this [codepen](http://codepen.io/drmikeh/pen/WxrYKW?editors=1100#0)
 
+---
 
 ## Exercise - CSS Diner
 
 Play [CSS Diner](http://flukeout.github.io/) to learn more about CSS Selectors. See if you can finish all 26 levels.
 
+---
 
 ## Resources
 * [30 CSS Selectors You Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
